@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import {Link} from 'react-router-dom';
 
 const NavigationBar = ({cartItems}) => {
 
@@ -8,11 +9,11 @@ const NavigationBar = ({cartItems}) => {
                <header className="header"> 
                 <h1>TeeRex Store</h1>
                 <div className="header-right">
-                    <a href="/">Products</a>
-                    <a href="/cart" className="cart-icon">
+                    <Link to="/">Products</Link>
+                    <Link to ="/cart" className="cart-icon">
                         <span className="cart-count">{cartItems.length ? cartItems.length : 0}</span>
                         🛒
-                    </a>
+                    </Link>
                 </div>
             </header>            
         </div>

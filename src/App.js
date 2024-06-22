@@ -42,7 +42,7 @@ function App() {
           <Route exact path = "/" element={<HomePage addToCart={addToCart} cartItems={cartItems}/>}>
             
           </Route>
-          <Route path = '/cart' element={<CartPage cartItems={cartItems} updateCartItem={updateCartItem} removeCartItem={removeCartItem} />}>
+          <Route exact path = '/cart' element={<CartPage cartItems={cartItems} updateCartItem={updateCartItem} removeCartItem={removeCartItem} />}>
             
           </Route>
         </Routes>
